@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   transition: 0.2s linear;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
 }
@@ -53,7 +53,6 @@ html{
   margin-bottom: 30px;
   display: flex;
   transition: transform 0.3s ease-in-out;
-
 }
 
 #card:nth-child(1) #imgcard {
@@ -72,29 +71,26 @@ html{
   background-color: var(--bg4);
 }
 
-
-#card h2, #card p {
-
+#card h2,
+#card p {
   margin-bottom: 15px;
 }
 
-#card p{
+#card p {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   transition-delay: 0.2s; /**to avoid jarks */
-
 }
 
 #buy {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   transition-delay: 0.2s; /*to avoid jarks*/
-  
 }
 
 /* start hover and animation */
 
-#card_info{
+#card_info {
   height: 30px;
   overflow: hidden;
   transition: height 0.5s ease-in-out;
@@ -108,23 +104,21 @@ html{
 #card:hover #card_info {
   height: 190px;
   overflow: visible;
-
 }
 
-#card:hover p{
+#card:hover p {
   opacity: 1;
 }
 
-#card:hover #buy{
+#card:hover #buy {
   opacity: 1;
 }
 
-#card_info button{
+#card_info button {
   text-transform: uppercase;
 }
 
-
-.searchform{
+.searchform {
   position: absolute;
   top: 120%;
   right: 0%;
@@ -134,15 +128,13 @@ html{
   align-items: center;
   transform: scaleY(0);
   transform-origin: top;
-
 }
 
-.searchform.active{
+.searchform.active {
   transform: scaleY(1);
-
 }
 
-.searchform input{
+.searchform input {
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
@@ -156,10 +148,8 @@ html{
   font-size: 2.2rem;
   margin-right: 1.5rem;
   color: #13131a;
-  
 }
 
-.searchform label:hover{
+.searchform label:hover {
   color: #ffc107;
 }
-
