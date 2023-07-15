@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  transition: 0.2s linear;
+}
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
 
 @font-face {
   font-family: roboto;
@@ -36,7 +43,7 @@
   background-color: aliceblue;
   padding: 30px;
   border-radius: 12px;
-  transition: height 0.3s ease-in-out;
+  transition: height 0.5s ease-in-out;
   margin-top: 70px;
 }
 
@@ -90,7 +97,7 @@
 #card_info{
   height: 30px;
   overflow: hidden;
-  transition: height 0.3s ease-in-out;
+  transition: height 0.5s ease-in-out;
 }
 
 #card:hover #imgcard {
@@ -114,5 +121,45 @@
 
 #card_info button{
   text-transform: uppercase;
+}
+
+
+.searchform{
+  position: absolute;
+  top: 120%;
+  right: 0%;
+  width: 30rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+
+}
+
+.searchform.active{
+  transform: scaleY(1);
+
+}
+
+.searchform input{
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #13131a;
+  padding: 1rem;
+  text-transform: none;
+}
+
+.searchform label {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: #13131a;
+  
+}
+
+.searchform label:hover{
+  color: #ffc107;
 }
 

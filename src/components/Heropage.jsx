@@ -7,7 +7,7 @@ import stricksframe from "../images/stricksframe.png";
 const Heropage = () => {
   return (
     <section className=" p-10">
-      <div className=" container mx-auto mt-10 sm:flex items-center lg:scal-[105%]">
+      <div className=" container mx-auto mt-16 sm:flex items-center lg:scal-[105%]">
         <div className=" mb-10 sm:mr-10">
           <img src={stricksframe} alt="mainimg" />
         </div>

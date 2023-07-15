@@ -1,3 +1,5 @@
+
+import Feedback from "./components/Feedback";
 import Heropage from "./components/Heropage";
 import NavBar from "./components/NavBar";
 import SpecialMenu from "./components/SpecialMenu";
@@ -10,6 +12,8 @@ function App() {
       <Heropage/>
       <SubHero/>
       <SpecialMenu/>
+      <Feedback/>
+     
   
     </>
   );
