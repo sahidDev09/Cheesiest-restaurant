@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import { FaSearch } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping,} from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
 
